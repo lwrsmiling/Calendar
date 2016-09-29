@@ -8,26 +8,47 @@
 <body>
 	<div class="wrap">
 		<div class="title">
-			<div class="helper">
-			    <ul class="nav">
-			    <li>
-			    	<button onclick="lastYear()" style="float: left"><</button>
+			<div class="controller">
+				<button onclick="lastYear()" ><</button>
 			    	<select id="year_selected" >
 			    		
                     </select>
-			    	<button onclick="nextYear()" style="float: right">></button>
-			    	
-			    </li>
-			    <li>
+			    	<button onclick="nextYear()" >></button>
+			    
 			    	<button style=""><</button>
-			    	<button style="float: right">></button>
-			    </li>
-			    <li>
-			    	<button style="width: 90px">Today</button>
-			    </li>
-			    </ul>
-			</div>	
+			    	<button >></button>
+			  
+			    	<button onclick="generateDateTable()" >Today</button>
+				
+			</div>
+			    
 		</div>
+		<div class="content">
+			<div class="calendar_wrapper">
+			<table id="calendar">
+			    <thead>
+					<tr>
+						<th>Sunday</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+						<th>Saturday</th>
+					</tr>
+					<tbody id="dateTable">
+						
+					</tbody>
+			     </thead>
+		    </table>
+			</div>
+			
+			
+		</div>
+
+
+			
 	</div>
-    <script src="My Calendar.js"></script>
+
+   <script src="My Calendar.js"></script>
 </body>
