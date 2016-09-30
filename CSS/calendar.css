@@ -48,9 +48,13 @@
 	position: absolute;
 	top: 50px;
 	font-size: 60%;
+	border: 1px solid black;
 
 }
 
+th, td{
+    border: 1px solid black;
+}
 
 /*.nav li a{
 	text-decoration: none;
