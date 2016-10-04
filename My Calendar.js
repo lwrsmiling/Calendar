@@ -40,7 +40,7 @@ var m_selection = document.getElementById("month_selection");
     var year_selected = y_selection.options[y_selection.selectedIndex].value;
     var month_selected = m_selection.options[m_selection.selectedIndex].value;
     newCalendar ();
-    
+    today_Summary();
 
 
 
@@ -147,6 +147,21 @@ btn_backtoToday.onclick= function (){
       
   };
 
+  }
+
+  function today_Summary(){
+    var yandm_info = document.getElementById("yandm_info");
+    var date_info = document.getElementById("date_info");
+    var week_info = document.getElementById("week_info");
+    
+    var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 
+    'Sep', 'Oct', 'Nov', 'Dec'];
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", 
+    "Friday", "Saturday"];
+    
+    yandm_info.innerHTML = monthNames[current_month] + " " + current_year;
+    date_info.innerHTML = today.getDate();
+    week_info.innerHTML = dayNames[today.getDay()];
   }
 
 /*choose your date

@@ -1,7 +1,7 @@
 
 .wrap{
 	margin: 0 auto;
-	height: 1000px;
+	height: 401px;
 	width: 500px;
 	background-color: red;
 }
@@ -10,8 +10,6 @@
 	height: 50px;
 	width: 500px;
 	background-color: #DAE0EF;
-	display: table;
-	position: absolute;
 
 }
 
@@ -30,33 +28,48 @@
 
 
 .content{
-	height: 400px;
+	height: 350px;
 	width: 500px;
 	background-color: yellow;
 }
 
 .calendar_wrapper{
-	height: 400px;
+	height: 350px;
 	width: 400px;
 	background-color: blue;
+	float: left;
 }
 
 #calendar{
-	width: 390px;
-	height: 400px;
+	width: 100%;
+	height: 100%;
 	background-color: white;
-	position: absolute;
-	top: 50px;
+    border: 1px solid black;
 	font-size: 60%;
-	border: 1px solid black;
+	border-collapse: collapse;
+    border-style: hidden;
 
 }
 
 th, td{
     border: 1px solid black;
+    text-align: center;
+    width: 14.28%;
+    height: 14.28%;
 }
 
-/*.nav li a{
-	text-decoration: none;
+.today_summary{
+	width: 100px;
+	height: 350px;
+	float: right;
+}
 
+.today_summary ul{
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+.today_summary ul li{
+	margin-bottom: 20px;
 }
